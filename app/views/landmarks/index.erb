@@ -1,6 +1,11 @@
 <h2>All Historical Landmarks</h2>
 
+<a href="/landmarks/new">Submit NYC Landmark</a>
 <!-- add content here -->
+<% @landmarks.each do |landmark| %>
+  <h3><a href="/landmarks/<%= landmark.id %>"><%= landmark.name %></a></h3>
+  <h5>Completed in <%= landmark.year_completed %></h5><br>
+<% end %>
 
 <a class="button" href="/figures">Figures</a>
 <a class="button" href="/">Home</a>

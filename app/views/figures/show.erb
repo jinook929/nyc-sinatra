@@ -1,0 +1,15 @@
+<h1>Who Was "<%= @figure.name %>"?</h1>
+
+<h3>Title(s) the Figure Took</h3>
+<ul>
+  <% @titles.each do |title| %>
+    <li><%= title.name %></li>
+  <% end %>
+</ul>
+
+<h3>Landmarks(s) the Figure Built</h3>
+<ul>
+  <% @landmarks.each do |landmark| %>
+    <li><a href="/landmarks/<%= landmark.id %>"><%= landmark.name %></a></li>
+  <% end %>
+</ul>

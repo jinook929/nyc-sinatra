@@ -4,10 +4,11 @@
     <th>Year Completed</th>
   </tr>
   <tr>
-    <td><%= @landmark.name %></td>
-    <td><%= @landmark.year_completed %></td>
+    <td align ="center"><%= @landmark.name %></td>
+    <td align ="center"><%= @landmark.year_completed %></td>
   </tr>
-<table>
+  <table>
+  <h5>=> Built in time of "<%= @landmark.figure.name %>" <=</h5>
 
 <a class="button" href="/landmarks/<%= @landmark.id %>/edit">Edit Landmark</a>
 <a class="button" href="/landmarks">Landmarks</a>
